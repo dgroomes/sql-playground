@@ -1,0 +1,1 @@
+select * from snapshots limit 10;
