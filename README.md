@@ -4,7 +4,7 @@
 
 ---
 
-### Instructions
+## Instructions
 
 Requires: Docker
   
@@ -18,3 +18,10 @@ Requires: Docker
     * `psql --username postgres --host localhost -f observations/observations-data.sql` 
 1. Stop the Postgres Docker container
     * Execute `docker-compose down`
+
+## WishList
+
+General clean-ups, TODOs and things I wish to implement for this project:
+
+* IN PROGRESS Explore Postgres without Docker. I'd like to learn the basics of `pg_ctl` so I don't need to depend on Docker to run
+  Postgres (although Docker is super convenient!) 
