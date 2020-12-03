@@ -34,3 +34,4 @@ administrate Postgres so that I have the option of using Postgres directly inste
 
 * [Postgres Wiki: "Administration"](https://wiki.postgresql.org/wiki/Category:Administration)
 * [Postgres Wiki: "What is a cluster?](https://wiki.postgresql.org/wiki/Prioritizing_databases_by_separating_into_multiple_clusters#What.27s_a_cluster.3F)
+* [Postgres docs: "Creating a database cluster"](https://www.postgresql.org/docs/13/creating-cluster.html)
