@@ -1,7 +1,5 @@
 # postgres-administration
 
-NOT YET IMPLEMENTED
-
 Exploring how to administrate Postgres via its many tools like `pg_ctl`.
   
 ### Overview
@@ -29,9 +27,11 @@ administrate Postgres so that I have the option of using Postgres directly inste
 * Log in to it with:
   * `psql postgres`
 * What if I want multiple databases? How do I do that?
+* I've captured some snippets to start, stop and recreate a Postgres instance over in my [`my-config` repository](https://github.com/dgroomes/my-config/blob/bd59be9748936c1978ade51b43e3188cd582714b/bash/bash-functions.sh#L66).
 
 ### Referenced Material
 
 * [Postgres Wiki: "Administration"](https://wiki.postgresql.org/wiki/Category:Administration)
 * [Postgres Wiki: "What is a cluster?](https://wiki.postgresql.org/wiki/Prioritizing_databases_by_separating_into_multiple_clusters#What.27s_a_cluster.3F)
 * [Postgres docs: "Creating a database cluster"](https://www.postgresql.org/docs/13/creating-cluster.html)
+* [dgroomes/my-config: "My configuration files and macOS setup instructions"](https://github.com/dgroomes/my-config/blob/bd59be9748936c1978ade51b43e3188cd582714b/bash/bash-functions.sh#L66)

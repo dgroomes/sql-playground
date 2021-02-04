@@ -23,5 +23,5 @@ Requires: Docker
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* IN PROGRESS Explore Postgres without Docker. I'd like to learn the basics of `pg_ctl` so I don't need to depend on Docker to run
+* DONE Explore Postgres without Docker. I'd like to learn the basics of `pg_ctl` so I don't need to depend on Docker to run
   Postgres (although Docker is super convenient!) 
