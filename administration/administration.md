@@ -1,4 +1,4 @@
-# postgres-administration
+# administration
 
 Exploring how to administrate Postgres via its many tools like `pg_ctl`.
   

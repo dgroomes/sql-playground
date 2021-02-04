@@ -1,23 +1,41 @@
 # sql-playground
 
-📚 Learning and exploring SQL (and Postgres in particular).
+📚 Learning and exploring SQL (Postgres in particular).
 
 ---
 
-## Instructions
+## Standalone sub-projects
 
-Requires: Docker
-  
-1. Start a Postgres instance using Docker Compose
-    * Execute `docker-compose up --detach`
-1. Explore the database!
-    * Enter a session on the command line with `psql --username postgres --host localhost`
-1. Define some test tables and test data
-    * Apply the DDL and DML files
-    * `psql --username postgres --host localhost -f observations/observations-schema.ddl` 
-    * `psql --username postgres --host localhost -f observations/observations-data.sql` 
-1. Stop the Postgres Docker container
-    * Execute `docker-compose down`
+This repository illustrates different concepts, patterns and examples via standalone sub-projects. Each sub-project is
+completely independent of the others and do not depend on the root project. This _standalone sub-project constraint_
+forces the sub-projects to be complete and maximizes the reader's chances of successfully running, understanding, and
+re-using the code.
+
+The sub-projects include:
+
+### `arrays/`
+
+Showcasing the `array` SQL data type.
+
+See the README in [arrays/](arrays/).
+
+### `lag/`
+
+Showcasing the `lag` Postgres function which is a part of Postgres' windowing support.
+
+See the README in [lag/](lag/).
+
+### `docker/`
+
+Run Postgres in a Docker container using Docker Compose.
+
+See the README in [docker/](docker/).
+
+### `administration/`
+
+Exploring how to administrate Postgres via its many tools like `pg_ctl`.
+
+See the README in [administration/](administration/).
 
 ## WishList
 
