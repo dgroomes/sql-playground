@@ -37,6 +37,12 @@ Exploring how to administrate Postgres via its many tools like `pg_ctl`.
 
 See the README in [administration/](administration/).
 
+### `test-data/`
+
+Generate test data to aid in performance exploration and analysis.
+
+See the README in [test-data/](test-data/).
+
 ## WishList
 
 General clean-ups, TODOs and things I wish to implement for this project:
