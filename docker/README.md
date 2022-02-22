@@ -11,6 +11,6 @@ Run Postgres in a Docker container using Docker Compose.
 1. Stop the Postgres Docker container:
     * `docker-compose down`
 
-## Referenced Material
+## Reference
 
 * [Docker Compose](https://docs.docker.com/compose/)
