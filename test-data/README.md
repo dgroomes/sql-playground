@@ -16,18 +16,20 @@ data is easy! The `test-data` project shows how to generate a lot of basic data 
 
 ## Instructions
 
-* Alias the psql command:
+Follow these instructions to generate test data in a local Postgres database.
+
+1. Alias the psql command:
     * `alias psqlDo="psql --username postgres --host localhost"`
-* Apply the schema:
+1. Apply the schema:
     * `psqlDo -f numbers-schema.ddl`
-* Generate one million rows of test data:
+1. Generate one million rows of test data:
     * `psqlDo -f generate-numbers.sql -v rows=1000000`
-* Execute a sort and notice how slow it is!
+1. Execute a sort and notice how slow it is!
     * `psqlDo -c 'explain analyze select x from numbers order by x'`
     * Note that the `explain analyze` will conveniently print the execution time and not print the result set. 
-* Generate **ten** million rows: 
+1. Generate **ten** million rows: 
     * `psqlDo -f generate-numbers.sql -v rows=10000000`
-* Execute the same sort operation and notice how it is multiple times slower:
+1. Execute the same sort operation and notice how it is many times slower:
     * `psqlDo -c 'explain analyze select x from numbers order by x'`
 
 ## Reference
