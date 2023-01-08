@@ -19,11 +19,13 @@ Showcasing the `array` SQL data type.
 
 See the README in [arrays/](arrays/).
 
+
 ### `lag/`
 
 Showcasing the `lag` Postgres function which is a part of Postgres' windowing support.
 
 See the README in [lag/](lag/).
+
 
 ### `docker/`
 
@@ -31,17 +33,20 @@ Run Postgres in a Docker container using Docker Compose.
 
 See the README in [docker/](docker/).
 
+
 ### `administration/`
 
 Exploring how to administrate Postgres via its many tools like `pg_ctl`.
 
 See the README in [administration/](administration/).
 
+
 ### `test-data/`
 
 Generate test data to aid in performance exploration and analysis.
 
 See the README in [test-data/](test-data/).
+
 
 ## WishList
 
