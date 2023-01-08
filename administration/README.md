@@ -36,6 +36,10 @@ administrate Postgres so that I have the option of using Postgres directly inste
   * ```shell
     psql postgres
     ```
+* When you're finished, stop the database.
+  * ```shell
+    pg_ctl -D /opt/homebrew/var/postgresql@12 stop
+    ```
 * What if I want multiple databases? How do I do that?
 * I've captured some snippets to start, stop and recreate a Postgres instance over in my [`my-config` repository](https://github.com/dgroomes/my-config/blob/bd59be9748936c1978ade51b43e3188cd582714b/bash/bash-functions.sh#L66).
 
