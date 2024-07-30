@@ -10,14 +10,15 @@ A dataset of "observations" is used to explore the `array` data type.
 Follow these instructions to explore arrays in Postgres.
 
 1. Start the Postgres server
-    * Use whatever method you prefer: HomeBrew, Docker, etc. 
+    * Use whatever method you prefer: HomeBrew, Docker, etc. Depending on how you install it, the username and database
+      name will differ so take care to adjust the `psql` commands accordingly. 
 2. Apply the schema:
     * ```shell
-      psql --username postgres --host localhost -f observations-schema.ddl
+      psql postgres -f observations-schema.ddl
       ```
 3. Insert test data:
     * ```shell
-      psql --username postgres --host localhost -f observations-data.sql
+      psql postgres -f observations-data.sql
       ```
 4. Try out the queries in `observations-explore.sql` and learn about SQL arrays!
     * For example, execute the `observations-ad-hoc-query.sh` with the following command.

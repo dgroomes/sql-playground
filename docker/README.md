@@ -25,7 +25,7 @@ Follow these instructions to get up and running with Postgres in a Docker contai
     * I'm using Docker Desktop, but you could use an alternative, like [Colima](https://github.com/abiosoft/colima).
 2. Start a Postgres instance using Docker Compose:
     * ```shell
-      docker-compose up
+      docker compose up
       ```
     * Note: you'll usually want to use the `--detach` option so that the container runs in the background. For this
       example, we want to take a moment and actually inspect the output of the container startup. What do you notice?
@@ -37,7 +37,7 @@ Follow these instructions to get up and running with Postgres in a Docker contai
     * When you are finished, exit the session with `\q`.
 4. Stop the Postgres Docker container:
     * ```shell
-      docker-compose down
+      docker compose down
       ```
 
 

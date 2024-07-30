@@ -5,5 +5,5 @@
 # References used:
 #  * https://www.postgresql.org/docs/13/functions-string.html
 
-psql --username postgres --host localhost \
+psql postgres \
 -c "\copy (select description, concat_ws(';', variadic notes) from observations) to stdout;"
