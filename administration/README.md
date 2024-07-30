@@ -15,7 +15,7 @@ administrate Postgres so that I have the option of using Postgres directly inste
 
 * Install Postgres on macOS using Homebrew with:
   * ```shell
-    brew install postgresql
+    brew install postgresql@16
     ```
   * See the Homebrew [formula source code](https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/postgresql.rb)
 * Alternatively, build Postgres from its source code
@@ -24,13 +24,12 @@ administrate Postgres so that I have the option of using Postgres directly inste
   * Note to self: I did build from source earlier but decided it's more idiomatic to use Homebrew to manage my Postgres
     installation
 * The Homebrew formula created a data directory somewhere.
-  * For the most recent time I installed Postgres using HomeBrew, I specifically wanted Postgres 12 (an older version)
-    and it created the data directory at `/opt/homebrew/var/postgresql@12`.
+  * HomeBrew created the data directory at `/opt/homebrew/var/postgresql@16`.
   * What does this mean? Is this the data directory that defines a database called "postgres"? Or, is this a global thing
     that can actually be associated with multiple databases?
 * Start Postgres with:
   * ```shell
-    pg_ctl -D /opt/homebrew/var/postgresql@12 start
+    pg_ctl -D /opt/homebrew/var/postgresql@16 start
     ```
 * Log in to it with:
   * ```shell
@@ -38,7 +37,7 @@ administrate Postgres so that I have the option of using Postgres directly inste
     ```
 * When you're finished, stop the database.
   * ```shell
-    pg_ctl -D /opt/homebrew/var/postgresql@12 stop
+    pg_ctl -D /opt/homebrew/var/postgresql@16 stop
     ```
 * What if I want multiple databases? How do I do that?
 * I've captured some snippets to start, stop and recreate a Postgres instance over in my [`my-config` repository](https://github.com/dgroomes/my-config/blob/bd59be9748936c1978ade51b43e3188cd582714b/bash/bash-functions.sh#L66).
