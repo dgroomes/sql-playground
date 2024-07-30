@@ -14,11 +14,11 @@ Follow these instructions to explore arrays in Postgres.
       name will differ so take care to adjust the `psql` commands accordingly. 
 2. Apply the schema:
     * ```shell
-      psql postgres -f observations-schema.ddl
+      psql -f observations-schema.ddl
       ```
 3. Insert test data:
     * ```shell
-      psql postgres -f observations-data.sql
+      psql -f observations-data.sql
       ```
 4. Try out the queries in `observations-explore.sql` and learn about SQL arrays!
     * For example, execute the `observations-ad-hoc-query.sh` with the following command.

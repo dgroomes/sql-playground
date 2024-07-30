@@ -14,11 +14,11 @@ Follow these instructions to explore the windowing feature in Postgres.
       name will differ so take care to adjust the `psql` commands accordingly.
 2. Apply the schema: 
     * ```shell
-      psql postgres -f snapshots-schema.ddl
+      psql -f snapshots-schema.ddl
       ```
 3. Insert test data:
     * ```shell
-      psql postgres -f snapshots-data.sql
+      psql -f snapshots-data.sql
       ```
 4. Try out the queries `snapshots-explore.sql` and learn about `lag`!    
 
